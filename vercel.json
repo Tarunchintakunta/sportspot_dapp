@@ -1,9 +1,13 @@
 {
     "version": 2,
     "buildCommand": "cd frontend && npm install && npm run build",
+    "installCommand": "echo Skipping root install",
     "outputDirectory": "frontend/dist",
     "routes": [
       { "handle": "filesystem" },
       { "src": "/(.*)", "dest": "/index.html" }
-    ]
+    ],
+    "github": {
+      "silent": true
+    }
   }
